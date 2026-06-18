@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi Express Dhaka - Premium Japanese Cuisine</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/slides/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate.css for Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <style>
+        :root {
+            --primary-color: #E63946;
+            --dark-color: #1D3557;
+            --light-color: #F8F9FA;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-color);
+            overflow-x: hidden;
+        }
+
+        /* Navbar Style */
+        .navbar {
+            background-color: rgba(29, 53, 87, 0.95) !important;
+            backdrop-filter: blur(5px);
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+
+        /* Hero Section Animation */
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        /* Hover Effect Cards */
+        .sushi-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .sushi-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        /* Floating Animation for Badges */
+        .badge-24h {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Review Section CSS */
+        .review-box {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><i class="fas fa-utensils text-danger me-2"></i>Sushi Express Dhaka</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-link"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-link"><a class="nav-link" href="#menu">Menu Highlights</a></li>
+                    <li class="nav-link"><a class="nav-link" href="#about">About & Contact</a></li>
+                    <li class="nav-link"><a class="nav-link" href="#reviews">Reviews</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-md-7 animate__animated animate__fadeInLeft">
+                    <span class="badge bg-danger mb-3 badge-24h fs-6"><i class="fas fa-clock me-1"></i> Open 24 Hours</span>
+                    <h1 class="display-3 fw-bold mb-3">Authentic Sushi <br><span class="text-danger">In Dhaka</span></h1>
+                    <p class="lead mb-4">Experience the finest Japanese cuisine at Bashtola Road. From mind-blowing Sushi Platters to fresh Tuna Sashimi.</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
+                        <a href="tel:01756905102" class="btn btn-danger btn-lg px-4 shadow"><i class="fas fa-phone me-2"></i> Call 01756-905102</a>
+                        <a href="https://www.foodpanda.com.bd" target="_blank" class="btn btn-outline-light btn-lg px-4"><i class="fas fa-shopping-bag me-2"></i> Order on Foodpanda</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Banner -->
+    <div class="container my-5">
+        <div class="row g-4 text-center">
+            <div class="col-md-4 animate__animated animate__fadeInUp">
+                <div class="p-4 bg-white shadow-sm rounded-3">
+                    <i class="fas fa-wallet fa-2x text-danger mb-3"></i>
+                    <h5>Affordable Price</h5>
+                    <p class="text-muted mb-0">৳600 – ৳1,400 per person</p>
+                </div>
+            </div>
+            <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: 0.1s;">
+                <div class="p-4 bg-white shadow-sm rounded-3">
+                    <i class="fas fa-star fa-2x text-warning mb-3"></i>
+                    <h5>Top Rated</h5>
+                    <p class="text-muted mb-0">4.6 Rating (9 Google Reviews)</p>
+                </div>
+            </div>
+            <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                <div class="p-4 bg-white shadow-sm rounded-3">
+                    <i class="fas fa-truck fa-2x text-success mb-3"></i>
+                    <h5>Services</h5>
+                    <p class="text-muted mb-0">Dine-in · Drive-through · No-contact delivery</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our Menu Highlights</h2>
+                <div class="mx-auto bg-danger" style="width: 60px; height: 3px;"></div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Item 1 -->
+                <div class="col-md-4">
+                    <div class="card sushi-card h-100">
+                        <img src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Sushi Platter">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Sushi Platter</h5>
+                            <p class="card-text text-muted">Assorted premium sushi beautifully served for true Japanese food lovers.</p>
+                            <span class="text-danger fw-bold">Chef's Special</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="col-md-4">
+                    <div class="card sushi-card h-100">
+                        <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Rainbow Roll">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Rainbow Roll</h5>
+                            <p class="card-text text-muted">A colorful combination of fresh tuna, salmon, and avocado layered beautifully.</p>
+                            <span class="text-danger fw-bold">Popular Item</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="col-md-4">
+                    <div class="card sushi-card h-100">
+                        <img src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Tuna Sashimi">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Tuna Sashimi</h5>
+                            <p class="card-text text-muted">Freshly cut premium raw tuna slices served with traditional wasabi and soy sauce.</p>
+                            <span class="text-danger fw-bold">Freshly Sourced</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">What Our Customers Say</h2>
+                <div class="mx-auto bg-danger" style="width: 60px; height: 3px;"></div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="review-box shadow-sm">
+                        <div class="text-warning mb-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="fst-italic">"This place has blown my mind. The sushi's are just the chef kiss. I am in love with this place."</p>
+                        <h6 class="fw-bold text-dark mb-0">- Tinny Saha</h6>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="review-box shadow-sm">
+                        <div class="text-warning mb-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="fst-italic">"Food was delicious. The service was top notch and the vibes are highly recommended."</p>
+                        <h6 class="fw-bold text-dark mb-0">- Mamunur Rashid (Local Guide)</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Contact Section -->
+    <section id="about" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <h3 class="fw-bold text-danger mb-4">Sushi Express Dhaka</h3>
+                    <p class="text-light-50">We bring you the absolute best and fresher experience of Japanese cuisine right in the heart of Dhaka. Serving you around the clock (24 Hours Open) with ultimate care and premium quality ingredients.</p>
+                    <div class="mt-4">
+                        <p><i class="fas fa-map-marker-alt text-danger me-2"></i> Kha, 55/A Bashtola Road, Dhaka 1212</p>
+                        <p><i class="fas fa-phone text-danger me-2"></i> 01756-905102</p>
+                        <p><i class="fas fa-clock text-danger me-2"></i> Open 24/7 (Always Open)</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="mb-4">Quick Contact / Inquiry</h4>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Message/Reservation Request" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-danger w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-3 text-center text-white-50 fs-7">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Sushi Express Dhaka. Designed for Premium Client Showcase.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript for Interactive Alert -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! Your client demo form submission worked flawlessly.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
